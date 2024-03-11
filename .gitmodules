@@ -1,6 +1,0 @@
-[submodule "themes/geekblog"]
-	path = themes/geekblog
-	url = https://github.com/thegeeklab/hugo-geekblog.git
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
