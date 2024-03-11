@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://k-capehart.github.io/sitemap.xml
