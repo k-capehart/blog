@@ -3,18 +3,18 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "kcapehart"
+title = "Kyle Capehart"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-  # description = "My awesome website"
+  description = "Kyle Capehart Software Engineer Portfolio and Salesforce Blog"
 
 [params.author]
   name = "Kyle Capehart"
-  image = "img/author.jpg"
+  image = "img/kyle_circle.png"
   headline = "Software Engineer"
   bio = "I write code and such"
   links = [
