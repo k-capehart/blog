@@ -6,6 +6,28 @@
     <description>Recent content in Categories on Kyle Capehart</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Tue, 12 Mar 2024 12:34:07 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apex</title>
+      <link>http://localhost:1313/categories/apex/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/categories/apex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flows</title>
+      <link>http://localhost:1313/categories/flows/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/categories/flows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Salesforce</title>
+      <link>http://localhost:1313/categories/salesforce/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/categories/salesforce/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

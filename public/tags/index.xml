@@ -6,6 +6,70 @@
     <description>Recent content in Tags on Kyle Capehart</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Tue, 12 Mar 2024 12:34:07 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apex</title>
+      <link>http://localhost:1313/tags/apex/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/apex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apex Class</title>
+      <link>http://localhost:1313/tags/apex-class/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/apex-class/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apex Trigger</title>
+      <link>http://localhost:1313/tags/apex-trigger/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/apex-trigger/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Declarative</title>
+      <link>http://localhost:1313/tags/declarative/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/declarative/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flows</title>
+      <link>http://localhost:1313/tags/flows/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/flows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lightning Flow</title>
+      <link>http://localhost:1313/tags/lightning-flow/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/lightning-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programmatic</title>
+      <link>http://localhost:1313/tags/programmatic/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/programmatic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Record Triggered Flow</title>
+      <link>http://localhost:1313/tags/record-triggered-flow/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/record-triggered-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Salesforce</title>
+      <link>http://localhost:1313/tags/salesforce/</link>
+      <pubDate>Tue, 12 Mar 2024 12:34:07 -0400</pubDate>
+      <guid>http://localhost:1313/tags/salesforce/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
