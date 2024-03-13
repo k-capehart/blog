@@ -13,7 +13,7 @@ We've all heard the pitch. Flows are the declarative solution to automation in S
 
 In most trainings, Flows are recommended as the go-to solution, with Apex as a secondary option if the logic becomes too complex. Salesforce even recently unveiled their new character, [Flo the Flying Squirrel](https://www.salesforce.com/blog/meet-salesforce-workflow-character-flo/), as a way of demonstrating their commitment to declarative tools. 
 
-![Flow the flying Squirrel flying across the screen](../../assets/img/first_post/flo.png)
+![Flow the flying Squirrel flying across the screen](../../../assets/img/first_post/flo.png)
 
 However, declarative automations are not a good pattern to design a system with. If given the option, an Engineer should always choose code.
 
@@ -30,7 +30,7 @@ Flows are often touted as easier to build, which is certainly true if you’re n
 ### Ease of Maintenance
 If complex processes are built out in flows, then it quickly becomes difficult to maintain. Over time, flows might end up looking like this, which become a nightmare to debug:
 
-![A very large Salesforce flow, with numerous complex branches](../../assets/img/first_post/large_flow.png)
+![A very large Salesforce flow, with numerous complex branches](../../../assets/img/first_post/large_flow.png)
 
 As mentioned before, it might become necessary to move complex functionality from flows into Apex triggers. If so, automations are now handled in two different places and the order of execution needs to be considered to ensure expected outcomes still hold. With an absence of clear documentation, it can be cumbersome to figure out where certain business logic resides. 
 
@@ -43,14 +43,14 @@ What’s the problem then?
 
 The metadata is in xml, and not human readable. The only viable way to perform a code review on a Flow is to open it in a sandbox and view it in the UI. This isn’t feasible if it was developed in a scratch org, meaning the reviewer will have to do their best to read the xml or deploy it to their own scratch org. 
 
-The problem is even worse if non-Salesforce developers are reviewing the change. A Java developer should be able to trace through Apex without much issue but a Flow may be harder to parse without proper training.
+The problem is even worse if non-Salesforce developers are reviewing the change. A Java developer should be able to trace through Apex without much issue, but a Flow may be harder to parse without proper training.
 
 ### Writing Tests
 Flows offer almost the same power as Apex but with a simpler learning curve, which is usually considered a positive. There’s a huge problem with this reasoning though. Apex code requires a minimum threshold of code coverage before deploying to production. Flows by default, do not.
 
 If a tool can make external callouts to systems, reassign records, expose data, or any other number of high impact operations, there needs to be a certain level of security. Not to mention the reliability of a system that doesn't have standardized tests in place. [Declarative flow tests](https://help.salesforce.com/s/articleView?id=sf.flow_concepts_testing.htm&type=5) have recently been released, but they don’t replace the full functionality of Apex test classes. Most importantly, they're missing the ability to automatically run during a deployment. This is essential in any CI/CD process to ensure breaking changes are caught.
 
-![A successful flow test executed in Salesforce UI](../../assets/img/first_post/flow_test.png)
+![A successful flow test executed in Salesforce UI](../../../assets/img/first_post/flow_test.png)
 
 There is a way to [enforce flow test coverage](https://help.salesforce.com/s/articleView?id=release-notes.rn_forcecom_flow_mgmnt_coverage.htm&release=222&type=5) from Apex tests, which is highly recommended for any organization using flows. However, the fact that it’s not enabled by default is a big concern. A developer should be writing unit tests as soon as possible in the development process, so there’s no reason not to write the business logic in Apex as well. Salesforce themselves recommend a [test-driven development process](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_testing_intro.htm), which is only feasible with Apex tests.
 

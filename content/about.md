@@ -9,4 +9,4 @@ I'm a Software Engineer based in Orlando, Florida who specializes in Salesforce 
 
 At my current role, I serve as the Lead Engineer for the Salesforce implementation at American Tire Distributors and work on various systems related to customer interaction. It has always been my goal to apply software engineering best practices to the Salesforce platform. Previously, I worked as a Consultant / Developer for the Federal Government while at Deloitte, giving me a wide breadth of experience in a client facing role.
 
-Beyond work, I usually have a book in hand, and read lots of science-fiction and fantasy. I also love to run and can be found participating in local 5Ks. Ask me about my cat Brisket.
+Beyond work, I usually have a book in hand, and read lots of science-fiction and fantasy. I also love to run and participate in local 5Ks. Ask me about my cat Brisket.
