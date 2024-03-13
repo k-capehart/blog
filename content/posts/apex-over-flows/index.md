@@ -1,5 +1,5 @@
 +++
-title = 'Why you should always use Apex instead of Flows in Salesforce'
+title = 'Why you should use Apex instead of Flows in Salesforce'
 date = 2024-03-12T12:34:07-04:00
 draft = true
 categories = ['salesforce', 'apex', 'flows']
