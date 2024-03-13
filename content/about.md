@@ -2,6 +2,7 @@
 title = 'About Me'
 date = 2024-03-11T13:37:27-04:00
 draft = false
+keywords = ['kyle capehart', 'salesforce engineer', 'salesforce blog', 'software engineer', 'senior software engineer', 'senior salesforce engineer']
 +++
 
 I'm a Software Engineer based in Orlando, Florida who specializes in Salesforce implementations. I have four certifications including Platform Developer II. I earned my Computer Science degree at the University of Central Florida. I love to learn, and am trying to improve my skills in Python, Go, and Angular.
