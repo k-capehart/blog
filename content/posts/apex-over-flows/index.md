@@ -15,7 +15,7 @@ In most trainings, Flows are recommended as the go-to solution, with Apex as a s
 
 ![Flow the flying Squirrel flying across the screen](../../../assets/img/first_post/flo.png)
 
-However, declarative automations are not a good pattern to design a system with. If given the option, an Engineer should always choose code.
+However, flows were never meant to replace Apex entirely. They are simply an alternative solution to problems commonly solved with Apex triggers or scheduled classes. If given the option, an Engineer should always choose code.
 
 There are use cases for Flows. If there isn’t a developer on hand, or there is a large legacy system, then code might not be an option. That being said, any software solution needs to be able to scale. For a company hoping to provide the smoothest transition, Salesforce solutions need to be designed by engineers from the start. Otherwise, it's set up for failure. 
 
