@@ -1,9 +1,9 @@
 +++
 title = 'Why you should use Apex instead of Flows in Salesforce'
 date = 2024-03-12T12:34:07-04:00
-draft = true
+draft = false
 categories = ['salesforce', 'apex', 'flows']
-keywords = ['salesforce', 'apex', 'apex class', 'apex trigger', 'flows', 'record triggered flow', 'lightning flow', 'declarative', 'programmatic', 'apex vs flows', 'triggers vs flows']
+keywords = ['salesforce', 'apex', 'apex class', 'apex trigger', 'flows', 'record triggered flow', 'lightning flow', 'declarative', 'programmatic', 'apex vs flows', 'triggers vs flows', 'salesforce flow tests', 'testing flows with apex', 'salesforce version control', 'declarative tests']
 +++
 
 Programmatic vs declarative solutions.
