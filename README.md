@@ -6,7 +6,6 @@
 
 ## Local Development
 - install hugo: https://gohugo.io/installation/
+- create new post: `hugo new content posts/{title}/index.md`
 - run site: `hugo server`
-- run site and build draft content: `hugo server -D`
-- publish site: `hugo`
- 
+- run site with draft content: `hugo server -D` 
