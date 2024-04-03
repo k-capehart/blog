@@ -281,32 +281,26 @@ Once complete, the Apex class will now be in your Salesforce org.
 ### Setup branch protections
 The workflows will now be available in your repository and will run whenever a pull request or release is created. However, validations work best when they are enforced. GitHub repositories can be setup with branch protections to ensure workflows pass before a pull request is merged.
 
-In your GitHub repository, go to "Settings" then "Rules" and "Rulesets". 
+In your GitHub repository, go to "Settings" then "Branches". 
 
 Click on "New ruleset" and then "New branch ruleset".
 
-![GitHub repository settings with rulesets selected](../../../assets/img/second_post/rulesets.png)
+![GitHub repository settings with branches selected](../../../assets/img/second_post/settings_branches.png)
 
 Fill out the following:
-- Ruleset Name: Salesforce Validation
-- Enforcement status: Active
-- Bypass list: Repository admin
-- Target branches: Default
-
-![New rule set called Salesforce Validation in GitHub](../../../assets/img/second_post/new_ruleset.png)
-
-In the "Branch protections" section, ensure the following are selected:
-- Restrict deletions
+- Branch name pattern: main
 - Require a pull request before merging
-    - Optionally require approvals
-- Require status checks to pass
+    - optional: Require approvals
+- Require status checks to pass before merging
     - Require branches to be up to date before merging
-    - Add "validate-deployment" check
-- Block force pushes
+        - validate-deployment
+- Do not allow bypassing the above settings
 
-![Branch protection checkboxes selected for new ruleset in GitHub](../../../assets/img/second_post/branch_protections.png)
+![New branch protection in GitHub repository settings with the branch name pattern: main](../../../assets/img/second_post/branch_protection_name.png)
+![Options for branch protection in GitHub with "Require a pull request" and "Require status check" selected](../../../assets/img/second_post/branch_protection_options.png)
+![Options for branch protections with "Do not allow bypassing" selected](../../../assets/img/second_post/branch_protection_options_2.png)
 
-Finally, click "Create" to enable the new protections. Salesforce must now successfully validate against the target org before it can be merged into the main branch.
+Finally, click "Create" to enable the new branch. GitHub now prevents commits being directly pushed to main, and Salesforce validations must successfully pass before a pull request can be merged.
 
 ## Conclusion
 
