@@ -3,7 +3,7 @@ title = 'Automate your Salesforce Deployments with GitHub Actions'
 date = 2024-04-02T10:38:35-04:00
 draft = true
 categories = ['salesforce', 'dev-ops']
-keywords = ['salesforce', 'sf', 'sfdc', 'dev-ops', 'dev ops', 'github actions', 'automating salesforce release', 'yaml', 'gh actions', 'salesforce pipeline', 'sf release', 'salesforce cli', 'sfdx', 'ci/cd', 'sf project deploy', 'sfdx authorization url', 'sf org login', 'sf org login sfdx-url', 'securely login salesforce', 'sf org display --verbose', 'devops center', 'change sets', 'ant migration tool retirement', 'ant migration end of life']
+keywords = ['salesforce', 'sf', 'sfdc', 'dev-ops', 'dev ops', 'github actions', 'automating salesforce release', 'yaml', 'gh actions', 'salesforce pipeline', 'sf release', 'salesforce cli', 'sfdx', 'ci/cd', 'ci/cd in salesforce', 'ci cd salesforce', 'sf project deploy', 'sfdx authorization url', 'sf org login', 'sf org login sfdx-url', 'sf org login sfdx-url --sfdx-url-stdin', 'sf org login sfdx-url -u', 'salesforce authorization for ci', 'pipe sfdx authorization url', 'securely login salesforce', 'sf org display --verbose', 'devops center', 'change sets', 'ant migration tool retirement', 'ant migration end of life', 'automatically deploy salesforce from github', 'automate salesforce deployment with command line', 'automate salesforce deployment with sf cli', 'sfdx cli retirement']
 +++
 
 Streamline your Salesforce release pipeline in just a few steps.
@@ -234,6 +234,9 @@ This names the workflow "Deploy project" and defines it to be triggered on the f
     - `-w 30` - wait 30 minutes to finish before displaying results 
 
 Once complete, push the workflows to your GitHub repository.
+`git add .`<br/>
+`git commit -m "create new workflows for salesforce deployments"`<br/>
+`git push`
 
 ### 5. Testing the workflows
 
@@ -248,7 +251,7 @@ Make a simple change, like creating a blank Apex Class.<br/>
 
 Commit your changes and push to the branch<br/>
 `git add .`<br/>
-`git commit -m "test new github workflow`<br/>
+`git commit -m "test new github workflow"`<br/>
 `git push -u origin test-workflows`
 
 In GitHub, create a new Pull Request, merging the `test-workflows` branch with the `main` branch.
@@ -272,13 +275,13 @@ Choose a tag, generally a release number (such as 0.0.1), then click "Generate r
 
 ![New release in GitHub, titled 0.0.1](../../../assets/img/second_post/new_release.png)
 
-The release workflow is now running, and can be viewed under the "Actions" tab.
+The release workflow is now running, and can be monitored under the "Actions" tab.
 
 ![Actions tab in GitHub with a running workflow titled 0.0.1](../../../assets/img/second_post/actions_tab.png)
 
-Once complete, the Apex class will now be in your Salesforce org. 
+Once complete, the Apex class will have deployed to your Salesforce org. 
 
-### Setup branch protections
+### 6. Setup branch protections
 The workflows will now be available in your repository and will run whenever a pull request or release is created. However, validations work best when they are enforced. GitHub repositories can be setup with branch protections to ensure workflows pass before a pull request is merged.
 
 In your GitHub repository, go to "Settings" then "Branches". 
@@ -296,7 +299,7 @@ Fill out the following:
         - validate-deployment
 - Do not allow bypassing the above settings
 
-![New branch protection in GitHub repository settings with the branch name pattern: main](../../../assets/img/second_post/branch_protection_name.png)
+![New branch protection in GitHub repository settings with branch name pattern of "main"](../../../assets/img/second_post/branch_protection_name.png)
 ![Options for branch protection in GitHub with "Require a pull request" and "Require status check" selected](../../../assets/img/second_post/branch_protection_options.png)
 ![Options for branch protections with "Do not allow bypassing" selected](../../../assets/img/second_post/branch_protection_options_2.png)
 
