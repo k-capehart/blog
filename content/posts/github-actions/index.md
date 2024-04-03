@@ -106,7 +106,7 @@ jobs:
       - name: 'Authenticate using SFDX_AUTH_URL'
         shell: bash
         run: | 
-          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u -
+          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u
 
       - name: 'Validate'
         run: |
@@ -154,14 +154,14 @@ The first step within the job is to use an action to checkout the source code. T
       - name: 'Authenticate using SFDX_AUTH_URL'
         shell: bash
         run: | 
-          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u -
+          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u
 ```
 Next, the workflow has to authenticate into the target environment.
 
 - `echo ${{ secrets.SFDX_AUTH_URL }} |` - access the SFDX_AUTH_URL from the GitHub repository and pipe it into the next command
 - `sf org login sfdx-url` - authorize an org using Salesforce DX authorization URL
     - `-s` - set the org as the default that all org-related commands run against
-    - `-u -` - indicates that the authorization URL will be piped in, the `-` being required input for the flag
+    - `-u` - indicates that the authorization URL will be piped in
 
 Read more about [authentication using the SFDX Authorization URL](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_org_commands_unified.htm#cli_reference_org_login_sfdx-url_unified) in official documentation.
 
@@ -204,7 +204,7 @@ jobs:
       - name: 'Authenticate using SFDX_AUTH_URL'
         shell: bash
         run: |
-          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u -
+          echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u
 
       - name: 'Deploy'
         run: |
