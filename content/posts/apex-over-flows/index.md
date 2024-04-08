@@ -70,4 +70,4 @@ Apex tests are flexible and easily written. They allow the ability to write bite
 Flows have their place in the Salesforce ecosystem, but when it comes to picking the right tool for the job, Apex comes out on top almost every time. Invest in developers early on and Salesforce is less likely to become bloated with poorly optimized solutions. Software engineering teams should be encouraged to embrace code rather than avoid it.
 
 
-<br>*Send a message through one of my socials for any comments or questions.*
+<br>*Comments or questions? <a href="mailto: kyleacapehart@gmail.com">Send me a message</a>*
