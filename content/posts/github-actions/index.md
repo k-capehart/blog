@@ -107,7 +107,6 @@ jobs:
           fetch-depth: 0
       
       - name: 'Authenticate using SFDX_AUTH_URL'
-        shell: bash
         run: | 
           echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u
 
@@ -155,11 +154,10 @@ The first step within the job is to use an action to checkout the source code. T
 
 ```yaml
       - name: 'Authenticate using SFDX_AUTH_URL'
-        shell: bash
         run: | 
           echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u
 ```
-Next, the workflow authenticates into the target environment using a command executed in a bash shell.
+Next, the workflow authenticates into the target environment.
 
 - `echo ${{ secrets.SFDX_AUTH_URL }} |` - access the SFDX_AUTH_URL secret and pipe it into the next command
 - `sf org login sfdx-url` - authorize an org using a Salesforce DX authorization URL
@@ -205,7 +203,6 @@ jobs:
           fetch-depth: 0
             
       - name: 'Authenticate using SFDX_AUTH_URL'
-        shell: bash
         run: |
           echo ${{ secrets.SFDX_AUTH_URL }} | sf org login sfdx-url -s -u
 
