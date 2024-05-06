@@ -71,9 +71,7 @@ Under "Client Credentials Flow", set the "Run As" user to the user that should b
 
 ![Selecting a running user for client credentials flow](../../../assets/img/third_post/running_user1.png)
 
-Note down the Consumer Key and Consumer Secret by clicking on "Managed Consumer Details".
-
-
+Click "Save", and then return to View page of the Connected App in App Manager. Note down the Consumer Key and Consumer Secret by clicking on "Managed Consumer Details".
 
 ### 2. Create a new Go Module and connect to Salesforce
 
@@ -227,11 +225,11 @@ func main() {
 	srcAccount := os.Args[1]
 	targetAccount := os.Args[2]
 
-	sf, err := salesforce.Init(salesforce.Creds{
-		Domain:         "https://gmailcomdev116-dev-ed.develop.my.salesforce.com",
-		ConsumerKey:    "3MVG9ux34Ig8G5erbuIjhWJ8tP5f6WmDPEqNqaZwFeTUOwf4G8jefLIDzFfSrjWRgwB0AEFt4y9HzI5_pTuUf",
-		ConsumerSecret: "17119F461B1AC01E85BEC71283851F8F934362D14F2E9A6266FE2851C1B0032A",
-	})
+    sf, err := salesforce.Init(salesforce.Creds{
+        Domain:         {YOUR SALESFORCE DOMAIN},
+        ConsumerKey:    {YOUR CONNECTED APP CONSUMER KEY},
+        ConsumerSecret: {YOUR CONNECTED APP CONSUMER SECRET},
+    })
 	if err != nil {
 		panic(err)
 	}
