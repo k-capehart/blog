@@ -12,11 +12,11 @@ Interact with your Salesforce org using Golang.
 
 ## Introduction
 
-[go-salesforce](https://github.com/k-capehart/go-salesforce) is a new Salesforce REST API Wrapper written in [Go (golang)](https://go.dev/doc/), a statically typed, compiled programming language built by Google. It aims to make it easier for Go developers to call basic Salesforce REST API endpoints (such as authentication, querying, inserting/updating records, etc.) by wrapping these calls in methods that do the hard work. Integrate an application into Salesforce with ease or utilize the power of Go by automating repetitive Salesforce data tasks.
+[go-salesforce](https://github.com/k-capehart/go-salesforce) is a new Salesforce REST API Wrapper written in [Go (golang)](https://go.dev/doc/), a statically typed, compiled programming language built by Google. It aims to make it easier for Go developers to call Salesforce REST API endpoints (such as authentication, querying, inserting/updating records, etc.) by wrapping these calls in methods that do all the hard work. Integrate an application into Salesforce with ease or utilize the power of Go by automating repetitive data tasks.
 
 Check out the repository in GitHub: [k-capehart/go-salesforce](https://github.com/k-capehart/go-salesforce)
 
-The code is entirely open source, and is a fun side project to explore the Salesforce REST API and learn Go. Give the project a star and [create an issue](https://github.com/k-capehart/go-salesforce/issues) to start contributing.
+The code is entirely open source, and was created as a fun side project to explore the Salesforce REST API and learn Go. Give the project a star and [create an issue](https://github.com/k-capehart/go-salesforce/issues) to start contributing.
 
 ## Features
 
@@ -30,15 +30,21 @@ Read more about `go-soql`: [forcedotcom/go-soql](https://github.com/forcedotcom/
 
 ### Work with Batches of Records
 
-Perform operations on collections of records. `go-salesforce` will split these records into batches and collect the results to be returned as errors if necessary. These methods are especially useful for datasets as they avoid Bulk API specific limits.
+Perform operations on collections of records. `go-salesforce` will split these records into batches and collect the results to be returned as errors if necessary. Insert, update, or delete large collections of records while avoiding Bulk API specific limits in your org.
+
+Read about [Salesforce API Limits](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm), and [Bulk API Limits](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_bulkapi.htm).
 
 ### Composite Requests
 
-Salesforce's Composite API allows multiple "subrequests" to be contained within a single "composite request", reducing the overall number of API calls. Up to 5000 records can be operated in a single request without needing to use Bulk API. Datasets larger than 5000 will need to use either the Collection or Bulk methods.
+[Salesforce's Composite API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_composite_post.htm) allows multiple "subrequests" to be contained within a single "composite request", reducing the overall number of API calls. Up to 5000 records can be operated in a single request. Datasets larger than 5000 will need to use either the Collection or Bulk methods.
+
+Salesforce also supports dependent subrequests. For example, you can Insert a new Account and then Insert multiple child records associated with the Account all within the same request. This is very powerful and will be built upon in `go-salesforce`.
 
 ### Bulk API v2
 
 Create jobs to asynchronously insert, update, upsert, query, or delete large datasets. This can be done either through csv files or with runtime data. You can optionally wait for jobs to finish to process potential errors, or let it run in the background and fetch the results later.
+
+A common use case is to have predefined test data within a csv file that needs to be loaded into a Salesforce sandbox after a refresh. With `go-salesforce` you can automate this data loading process in just a few lines using the `InsertBulkFile` method.
 
 ## Example - Migrating Contacts
 
@@ -60,18 +66,19 @@ Fill out the following details, using your own email or that of an admin.
 - Connected App Name: Go Client
 - Contact Email: [your own email]
 - Enable OAuth Settings: TRUE
-- Callback URL: https://[your sfdc domain]/services/oauth2/token
+- Callback URL: https://[YOUR SF DOMAIN]/services/oauth2/token
 - Selected OAuth Scopes: Manage user data via APIs (api)
+- Enable Client Credentials Flow: TRUE
 
 ![Connected app with basic details information filled out out](../../../assets/img/third_post/connected_app1.png)
 ![Connected app with API details filled out out](../../../assets/img/third_post/connected_app2.png)
 
 Click "Save", then click on "Manage" and "Edit Policies".
-Under "Client Credentials Flow", set the "Run As" user to the user that should be assigned the flow.
+Under "Client Credentials Flow", set the "Run As" user to the user that should be authenticated.
 
 ![Selecting a running user for client credentials flow](../../../assets/img/third_post/running_user1.png)
 
-Click "Save", and then return to View page of the Connected App in App Manager. Note down the Consumer Key and Consumer Secret by clicking on "Managed Consumer Details".
+Click "Save", and then return to the View page of the Connected App in App Manager. Note down the Consumer Key and Consumer Secret by clicking on "Manage Consumer Details".
 
 ### 2. Create a new Go Module and connect to Salesforce
 
@@ -126,11 +133,11 @@ if err != nil {
 }
 ```
 
-This uses the `Init` method from `go-salesforce` to return a Salesforce instance using your client credentials from the previous step. Never publicly expose your ConsumerKey or Secret by securely storing credentials outside of your codebase.
+This uses the `Init` method from `go-salesforce` to return a Salesforce instance using your client credentials from the previous step. Never publicly expose your ConsumerKey or Secret. Always securely store credentials outside of your codebase before committing to a repository.
 
 ### 3. Query Contacts using go-soql
 
-There are two methods to query data using `go-salesforce`. One method would be to use the `Query` method to pass in a query as a string. However, Salesforce has created a package specifically marshalling SOQL queries. Read more about [go-soql](https://github.com/forcedotcom/go-soql).
+There are two options to query data using `go-salesforce`. One option would be to use the `Query` method to pass in a query as a string. However, Salesforce has created a package specifically for marshalling SOQL queries which will be utilized for this example. Read more about [go-soql](https://github.com/forcedotcom/go-soql).
 
 Replace `// TODO: Type Definitions` with the following type definitions:
 
@@ -150,6 +157,8 @@ type ContactSoqlQuery struct {
 }
 ```
 
+Note the `soql` struct tags that inform `go-soql` how to transform these definitions into queries.
+
 Replace `// TODO: Query Contacts` with this code:
 
 ```go
@@ -166,7 +175,7 @@ if err != nil {
 }
 ```
 
-`contactSoqlQuery` represents a SOQL query that selects the `Id` and `AccountId` fields, with a filter based on the given `AccountId`. The result is then unmarshalled into a slice of type `Contact`. This is useful because you don't have to separately maintain a query and a SObject type. The selected fields are always the same as the properties on the struct.
+`contactSoqlQuery` represents a SOQL query that selects the `Id` and `AccountId` fields, with a filter for `AccountId`. The `SELECT` clause is simply the fields from the `Contact` struct. The result is then unmarshalled into a slice of type `Contact`. This is useful because you don't have to separately maintain a query and a SObject type, since the fields are all pulled from the same definition.
 
 ### 4. Update Contact records
 
@@ -185,11 +194,11 @@ if err != nil {
 logger.Print("successfully updated " + strconv.Itoa(len(contacts)) + " contacts")
 ```
 
-This loops through the contacts variable that was populated from the query, and updates the `AccountId` to be that of the target account. The list is then passed as an argument to the `UpdateCollection()` method. The batch size is given as 200 but can be adjusted anywhere in the range of 1-200. If everything succeeds, then log how many Contacts were updated.
+This loops through the `contacts` variable that was populated from the query, and updates the `AccountId` to be that of the target account. The list is then passed as an argument to the `UpdateCollection` method. The batch size is given as 200 but can be adjusted anywhere in the range of 1-200. If everything succeeds, then log how many Contacts were updated.
 
 ### 5. Run the program
 
-The final code should look like this:
+The final code should look like this, but with your own org credentials:
 
 ```go
 package main
@@ -263,7 +272,7 @@ Source code: [k-capehart/go-salesforce-example](https://github.com/k-capehart/go
 Now that the code is complete, it can be executed. From the command line, build the package.<br>
 `go build migrate_contacts.go`
 
-Then run the program, replacing the Salesforce IDs below with those of Account Ids in your Salesforce org.<br>
+Run the program, replacing the Salesforce IDs below with those of Account Ids in your Salesforce org. The first Id is the Account with Contacts that should migrate to the second Account.<br>
 `./migrate_contacts 001Dn000013hAraIAE 001Dn00000NTt34IAD`
 
 ![the program successfully running on 2 contacts](../../../assets/img/third_post/run_program.png)
