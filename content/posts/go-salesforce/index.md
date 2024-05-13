@@ -1,9 +1,9 @@
 +++
 title = 'Introducing go-salesforce: A Salesforce REST API wrapper written in Go'
 date = 2024-05-03T10:14:32-04:00
-draft = true
+draft = false
 categories = ['salesforce']
-keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'go', 'golang', 'go programming language', 'go module', 'go package', 'salesforce go module', 'salesforce go package', 'salesforce rest api', 'salesforce rest api wrapper', 'salesforce rest api client', 'rest api wrapper', 'rest api client', 'salesforce data and go', 'composite api', 'bulk v2', 'go-soql', 'salesforce bulk api']
+keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'go', 'golang', 'go programming language', 'go module', 'go package', 'salesforce go module', 'salesforce go package', 'salesforce rest api', 'salesforce rest api wrapper', 'salesforce rest api client', 'rest api wrapper', 'rest api client', 'salesforce data and go', 'composite api', 'bulk v2', 'go-soql', 'salesforce bulk api', 'go salesforce', 'golang salesforce', 'go salesforce module', 'go-salesforce', 'salesforce-go', 'connect to salesforce with go']
 +++
 
 Interact with your Salesforce org using Golang.
@@ -30,15 +30,15 @@ Read more about `go-soql`: [forcedotcom/go-soql](https://github.com/forcedotcom/
 
 ### Work with Batches of Records
 
-Perform operations on collections of records. `go-salesforce` will split these records into batches and collect the results to be returned as errors if necessary. Insert, update, or delete large collections of records while avoiding Bulk API specific limits in your org.
+Perform operations on collections of records. `go-salesforce` will split these records into batches and collect the results to be returned as errors if necessary. Insert, update, or delete large collections of records while avoiding Bulk API specific limits in your org. Set the batch size for full control on how Salesforce processes the data.
 
 Read about [Salesforce API Limits](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm), and [Bulk API Limits](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_bulkapi.htm).
 
 ### Composite Requests
 
-[Salesforce's Composite API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_composite_post.htm) allows multiple "subrequests" to be contained within a single "composite request", reducing the overall number of API calls. Up to 5000 records can be operated in a single request. Datasets larger than 5000 will need to use either the Collection or Bulk methods.
+[Salesforce's Composite API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_composite_post.htm) allows multiple "subrequests" to be contained within a single "composite request", reducing the overall number of API calls. Up to 5000 records can be included in a single composite request. Datasets larger than 5000 will need to use either the Collection or Bulk methods.
 
-Salesforce also supports dependent subrequests. For example, you can Insert a new Account and then Insert multiple child records associated with the Account all within the same request. This is very powerful and will be built upon in `go-salesforce`.
+Salesforce also supports dependent subrequests. For example, you can Insert a new Account and multiple child records associated with the Account all within the same request. This is very powerful and will be built upon in `go-salesforce`.
 
 ### Bulk API v2
 
@@ -55,11 +55,16 @@ Steps are outlined below on how to create a simple `go-salesforce` utility to tr
 
 Source code can be found here: [k-capehart/go-salesforce-example](https://github.com/k-capehart/go-salesforce-example/blob/main/migrate_contacts.go)
 
+Prerequisites:
+- [Salesforce Developer Edition org](https://developer.salesforce.com/signup)
+- Basic knowledge of Salesforce and Golang
+
 ### 1. Create a Salesforce Connected App
 
-This example will use the Client Credentials OAuth flow. In your Salesforce Org, navigate to Setup and search for "App Manager". Click on "New Connected App". 
+This example will use the Client Credentials OAuth flow. Read official documentation on [creating a Connected App for OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5).
 
-Read official documentation on [creating a Connected App for OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5).
+In your Salesforce Org, navigate to Setup and search for "App Manager". Click on "New Connected App". 
+
 
 Fill out the following details, using your own email or that of an admin.
 
@@ -157,7 +162,7 @@ type ContactSoqlQuery struct {
 }
 ```
 
-Note the `soql` struct tags that inform `go-soql` how to transform these definitions into queries.
+Note the `soql` struct tags that inform `go-soql` how to transform these structs into queries.
 
 Replace `// TODO: Query Contacts` with this code:
 
@@ -190,11 +195,12 @@ logger := log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime)
 err = sf.UpdateCollection("Contact", contacts, 200)
 if err != nil {
     logger.Fatal(err.Error())
+} else {
+	logger.Print("successfully updated " + strconv.Itoa(len(contacts)) + " contacts")
 }
-logger.Print("successfully updated " + strconv.Itoa(len(contacts)) + " contacts")
 ```
 
-This loops through the `contacts` variable that was populated from the query, and updates the `AccountId` to be that of the target account. The list is then passed as an argument to the `UpdateCollection` method. The batch size is given as 200 but can be adjusted anywhere in the range of 1-200. If everything succeeds, then log how many Contacts were updated.
+This loops through the `contacts` variable that was populated from the query, and updates the `AccountId` value to be that of the target account. The list is then passed as an argument to the `UpdateCollection` method. The batch size is given as 200 but can be adjusted anywhere in the range of 1-200. If everything succeeds, then log how many Contacts were updated.
 
 ### 5. Run the program
 
@@ -262,8 +268,9 @@ func main() {
 	err = sf.UpdateCollection("Contact", contacts, 200)
 	if err != nil {
 		logger.Fatal(err.Error())
+	} else {
+		logger.Print("successfully updated " + strconv.Itoa(len(contacts)) + " contacts")
 	}
-	logger.Print("successfully updated " + strconv.Itoa(len(contacts)) + " contacts")
 }
 ```
 
