@@ -3,7 +3,7 @@ title = 'Introducing go-salesforce: A Salesforce REST API wrapper written in Go'
 date = 2024-05-03T10:14:32-04:00
 draft = false
 categories = ['salesforce']
-keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'go', 'golang', 'go programming language', 'go module', 'go package', 'salesforce go module', 'salesforce go package', 'salesforce rest api', 'salesforce rest api wrapper', 'salesforce rest api client', 'rest api wrapper', 'rest api client', 'salesforce data and go', 'composite api', 'bulk v2', 'go-soql', 'salesforce bulk api', 'go salesforce', 'golang salesforce', 'go salesforce module', 'go-salesforce', 'salesforce-go', 'connect to salesforce with go']
+keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'go', 'golang', 'go programming language', 'go module', 'go package', 'salesforce go module', 'salesforce go package', 'salesforce rest api', 'salesforce rest api wrapper', 'salesforce rest api client', 'rest api wrapper', 'rest api client', 'salesforce data and go', 'composite api', 'bulk v2', 'go-soql', 'salesforce bulk api', 'go salesforce', 'golang salesforce', 'go salesforce module', 'go-salesforce', 'salesforce-go', 'connect to salesforce with go', 'golang salesforce rest api', 'golang sfdc rest api', 'go salesforce rest api', 'go sfdc rest api', 'golang rest api wrapper for salesforce', 'go rest api wrapper for sfdc', 'salesforce bulk api in golang', 'login to salesforce with golang', 'go salesforce api', 'go sfdc api' , 'golang salesforce api' , 'go sfdc api', 'update salesforce with golang', 'automate salesforce data tasks with golang', 'automate salesforce tasks with go']
 +++
 
 Interact with your Salesforce org using Golang.
