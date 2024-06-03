@@ -8,4 +8,4 @@
 - create new post: `hugo new content posts/{title}/index.md`
 - run site: `hugo server`
 - run site with draft content: `hugo server -D` 
-- publish site: `hugo`
+- build site: `hugo`

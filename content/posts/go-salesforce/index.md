@@ -1,5 +1,5 @@
 +++
-title = 'Introducing go-salesforce: A Salesforce REST API wrapper written in Go'
+title = 'Go-Salesforce: A Salesforce REST API wrapper written in Go'
 date = 2024-05-03T10:14:32-04:00
 draft = false
 categories = ['salesforce']
@@ -283,3 +283,5 @@ Run the program, replacing the Salesforce IDs below with those of Account Ids in
 `./migrate_contacts 001Dn000013hAraIAE 001Dn00000NTt34IAD`
 
 ![the program successfully running on 2 contacts](../../../assets/img/third_post/run_program.png)
+
+<br>*Comments or questions? <a href="mailto: kyleacapehart@gmail.com">Send me a message</a>*
