@@ -10,7 +10,7 @@ draft = false
 Open source custom Salesforce CLI plugin.
 
 <div style="display: flex; width: 35%">
-    <a style="margin: auto; margin-left: 0px; padding: 0px 2px 0px 2px;" href="https://github.com/k-capehart/go-salesforce"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a>
+    <a style="margin: auto; margin-left: 0px; padding: 0px 2px 0px 2px;" href="https://github.com/k-capehart/kc-sf-plugin"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a>
     <a style="margin: auto; margin-left: 0px; padding: 0px 2px 0px 2px;" href="https://www.npmjs.com/package/kc-sf-plugin"><img src="https://img.shields.io/npm/v/kc-sf-plugin.svg?label=kc-sf-plugin" alt="Link to NPM Package"></a>
 </div>
 

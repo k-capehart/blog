@@ -10,7 +10,7 @@ draft = false
 Open source REST API wrapper written in Go.
 
 <div style="display: flex; width: 35%;">
-    <a style="margin: auto; margin-left: 0px; padding: 0px 2px 0px 2px;" href="https://github.com/k-capehart/kc-sf-plugin"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a>
+    <a style="margin: auto; margin-left: 0px; padding: 0px 2px 0px 2px;" href="https://github.com/k-capehart/go-salesforce"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a>
     <a style="margin: auto; margin-left: 0px; padding: 0px 2px 0px 2px;" href="https://godoc.org/github.com/k-capehart/go-salesforce"><img src="https://godoc.org/github.com/k-capehart/go-salesforce?status.png" alt="Link to go doc"></a>
 </div>
 
