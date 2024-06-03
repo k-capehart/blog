@@ -7,6 +7,7 @@ cascade = [
     { showDate = false },
     { sharingLinks = [''] }
 ]
+githubUrl = 'https://github.com/k-capehart'
 +++
 
 <br/>

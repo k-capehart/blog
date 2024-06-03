@@ -8,7 +8,7 @@ keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'go', 'golang', 'go pro
 
 Interact with your Salesforce org using Golang.
 
-![Salesforce and Golang logo](go-salesforce.png)
+![Salesforce and Golang logo](../../../assets/img/third_post/go-salesforce.png)
 
 ## Introduction
 

@@ -4,14 +4,16 @@ date = 2024-06-03T10:53:14-04:00
 weight = 20
 description = "Salesforce Developer Environment"
 tags = ['salesforce', 'salesforce org']
+pageName = 'salesforce-dev-org'
+icon = 'cloud'
 draft = false
 +++
 
-Personal salesforce developer environment with custom automation.
-
-<div style="display: flex; width: 35%">
-    <a style="margin: auto; margin-left: 0px; padding: 0px 2px 0px 2px;" href="https://github.com/k-capehart/sfdc-dev-org"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a>
+<div style="display: flex; flex-direction: row;">
+    <div><a href="https://github.com/k-capehart/sfdc-dev-org"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a></div>
 </div>
+
+Personal salesforce developer environment with custom automation.
 
 - Language: Apex, Makefile
 - A personal developer environment used for testing configuration and automation
