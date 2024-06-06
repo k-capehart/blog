@@ -3,7 +3,7 @@ title = 'Go-Salesforce'
 date = 2024-06-03T10:51:02-04:00
 weight = 10
 description = 'Open source REST API wrapper written in Go'
-tags = ['salesforce', 'golang']
+tags = ['salesforce', 'golang', 'go-salesforce', 'salesforce rest api', 'golang salesforce rest api', 'salesforce rest api wrapper', 'salesforce rest api client']
 pageName = "go-salesforce"
 icon = 'data'
 draft = false
@@ -17,7 +17,7 @@ draft = false
 Open source REST API wrapper written in Go.
 
 - Language: Golang
-- Allow Golang developers to easily call Salesforce REST API endpoints to authenticate to an org and manipulate data
-- Utilizes [go-soql](https://github.com/forcedotcom/go-soql), a package created by Salesforce for marshalling SOQL queries
-- Batch requests together to insert, update, upsert, or delete large amounts of records with or without the Bulk API
-- Composite Requests group multiple sub-requests into a single request
+- Allow Golang developers to easily call Salesforce REST API endpoints
+- Authenticate to a Salesforce org through a connected app 
+- Call methods to insert, update, upsert, or delete data in batches
+- Can work with csv files to import / export data

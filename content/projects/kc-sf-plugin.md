@@ -3,7 +3,7 @@ title = 'SF CLI Plugin'
 date = 2024-06-03T10:52:02-04:00
 weight = 15
 description = "Open source custom Salesforce CLI plugin"
-tags = ['salesforce', 'sf cli']
+tags = ['salesforce', 'sf cli', 'sf cli plugin', 'auto create triggers', 'salesforce trigger frameworks', 'sf cli diff']
 pageName = 'kc-sf-plugin'
 icon = 'terminal'
 draft = false
@@ -19,4 +19,4 @@ Open source custom Salesforce CLI plugin.
 - Language: TypeScript
 - Custom commands for the salesforce command line interface that can be installed as a plugin for anyone to use
 - Display differences between a source tracked org and a local project
-- Automatically generate Apex trigger frameworks based off of custom templates 
+- Automatically generate Apex trigger frameworks based off of custom templates
