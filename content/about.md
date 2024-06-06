@@ -18,4 +18,4 @@ I am happiest when I am solving fun problems. This site aims to document my solu
 
 Beyond work, I can usually be found reading a book, playing video games, or running. Ask me about my cat Brisket.
 
-[View Resume](../Kyle_Capehart_Resume_20240603.pdf)
+View my [Resume](https://raw.githack.com/k-capehart/resume/master/kyle_capehart_resume.pdf)
