@@ -2,7 +2,7 @@
 title = 'Web Browser Homepage'
 date = 2024-06-06T15:17:14-04:00
 weight = 17
-description = "A simple webpage to be used the home tab in a browser"
+description = "A simple webpage to be used as a browser home tab"
 tags = ['homepage', 'browser homepage', 'web browser homepage']
 pageName = 'web-browser-homepage'
 icon = 'web'
@@ -18,4 +18,4 @@ A custom homepage / new tab page built for web browsers.
 
 - Language: JavaScript, HTML, CSS
 - Displays the current time and social links
-- Set as the page to be automatically opened when a web browser is launched
+- Meant to be the homepage for a browser so it is opened on launch
