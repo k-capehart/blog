@@ -11,7 +11,7 @@ draft = false
 
 <div style="display: flex; flex-direction: row;">
     <div style="margin-right: 10px;"><a href="https://github.com/k-capehart/go-salesforce"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a></div>
-    <div style="margin: auto 0px auto 0px"><a href="https://godoc.org/github.com/k-capehart/go-salesforce"><img src="https://godoc.org/github.com/k-capehart/go-salesforce?status.png" alt="Link to go doc"></a></div>
+    <div style="margin: auto 0px auto 0px"><a href="https://godoc.org/github.com/k-capehart/go-salesforce/v2"><img src="https://godoc.org/github.com/k-capehart/go-salesforce/v2?status.png" alt="Link to go doc"></a></div>
 </div>
 
 Open source REST API wrapper written in Go.
