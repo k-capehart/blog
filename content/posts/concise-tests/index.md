@@ -6,7 +6,7 @@ categories = ['salesforce', 'dev-ops']
 keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'dev-ops', 'dev ops', 'github actions', 'automating salesforce release', 'yaml', 'gh actions', 'salesforce pipeline', 'sf release', 'salesforce cli', 'sfdx', 'ci/cd', 'ci/cd in salesforce', 'ci cd salesforce', 'sf apex run test', 'sf apex get test', 'sf apex run test --concise', 'sf apex get test --concise', '--concise', 'concise test results']
 +++
 
-Improving the developer experience when running apex tests through the Salesforce CLI.
+Improving the developer experience when running apex tests.
 
 ![Art of a computer terminal.](thumb-concise-tests.jpg)
 

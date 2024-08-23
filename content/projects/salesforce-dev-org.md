@@ -15,7 +15,7 @@ draft = false
 
 Personal salesforce developer environment with custom automation.
 
-- Language: Apex, Makefile
+- Language: Apex, Bash
 - A personal developer environment used for testing configuration and automation
 - Makefile - Automated bash scripts for creating scratch orgs, generating components, and deploying to an org
 - GitHub Actions - Automatically validate component files and run apex tests when a pull request is created, and deploy when a GitHub release is published
