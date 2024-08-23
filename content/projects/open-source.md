@@ -24,7 +24,7 @@ The official Salesforce CLI. Projects include [salesforcecli](https://github.com
 - [PR#377](https://github.com/forcedotcom/salesforcedx-apex/pull/377) - Reformat terminal output for apex test results
 - [PR#504](https://github.com/salesforcecli/plugin-apex/pull/504) - Add `concise` flag to `sf apex run test` to suppress successful test results in terminal output
 
-## Lightning Scanner Flow
+## Lightning Flow Scanner
 A community created plugin that scans Flows in Salesforce for deviations from best practices.
 
 - [PR#83](https://github.com/Lightning-Flow-Scanner/lightning-flow-scanner-core/pull/83) - Implement new rule to detect flows that are inactive
