@@ -10,9 +10,9 @@ showDate = false
 
 <br/>
 
-I'm a Software Engineer based in Orlando, Florida who specializes in Salesforce implementations. I hold the Platform Developer II certification and earned my Computer Science degree at the University of Central Florida. I love to learn and am always seeking out new challenges.
+I'm a Software Engineer based in Orlando, Florida. I hold multiple developer certifications and earned my Computer Science degree at the University of Central Florida. I have done extensive work with the Salesforce platform, but I love to learn and am always seeking out new challenges and technologies to learn.
 
-At my current role I serve as a Senior Software Engineer at American Tire Distributors, where I work on various systems related to customer interaction. Previously, I worked as a Developer at Deloitte, giving me experience in a client facing role. I have acted as a leader throughout my career and always strive to nourish growth within my team.
+At my current role, I serve as a Senior Software Engineer at American Tire Distributors, where I work on various systems related to customer interaction. Previously, I worked as a Developer at Deloitte, giving me experience in a client facing role. I have acted as a leader throughout my career and always strive to nourish growth within my team.
 
 I am happiest when I am solving fun problems. This site aims to document my solutions and showcase work that I am proud of.
 
