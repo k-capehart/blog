@@ -10,3 +10,5 @@
 - run site: `hugo server`
 - run site with draft content: `hugo server -D` 
 - build site: `hugo`
+
+test
