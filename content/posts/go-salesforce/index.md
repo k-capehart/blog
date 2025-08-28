@@ -8,7 +8,7 @@ keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'go', 'golang', 'go pro
 
 Interact with your Salesforce org using Golang.
 
-![Salesforce and Golang logo](../../../assets/img/third_post/go-salesforce.png)
+![Salesforce and Golang logo](img/go-salesforce.png)
 
 ## Introduction
 
@@ -75,13 +75,13 @@ Fill out the following details, using your own email or that of an admin.
 - Selected OAuth Scopes: Manage user data via APIs (api)
 - Enable Client Credentials Flow: TRUE
 
-![Connected app with basic details information filled out out](../../../assets/img/third_post/connected_app1.png)
-![Connected app with API details filled out out](../../../assets/img/third_post/connected_app2.png)
+![Connected app with basic details information filled out out](img/connected_app1.png)
+![Connected app with API details filled out out](img/connected_app2.png)
 
 Click "Save", then click on "Manage" and "Edit Policies".
 Under "Client Credentials Flow", set the "Run As" user to the user that should be authenticated.
 
-![Selecting a running user for client credentials flow](../../../assets/img/third_post/running_user1.png)
+![Selecting a running user for client credentials flow](img/running_user1.png)
 
 Click "Save", and then return to the View page of the Connected App in App Manager. Note down the Consumer Key and Consumer Secret by clicking on "Manage Consumer Details".
 
@@ -286,7 +286,7 @@ Now that the code is complete, it can be executed. From the command line, build 
 Run the program, replacing the Salesforce IDs below with those of Account Ids in your Salesforce org. The first Id is the Account with Contacts that should migrate to the second Account.<br>
 `./migrate_contacts 001Dn000013hAraIAE 001Dn00000NTt34IAD`
 
-![the program successfully running on 2 contacts](../../../assets/img/third_post/run_program.png)
+![the program successfully running on 2 contacts](img/run_program.png)
 
 <br>*Comments or questions? <a href="mailto: kyleacapehart@gmail.com">Send me a message</a>*
 

@@ -46,7 +46,7 @@ This article assumes that you have basic knowledge of Salesforce and working wit
 
 This assumes that you already have a Salesforce project created and setup in Visual Studio Code. Review the prerequisites above if not. A fresh Salesforce project should look something like this in GitHub.
 
-![GitHub repository with an initial commit of Salesforce metadata](../../../assets/img/second_post/repository.png)
+![GitHub repository with an initial commit of Salesforce metadata](img/repository.png)
 
 ### 2. SFDX Authorization URL
 
@@ -64,13 +64,13 @@ First, copy the value for `Sfdx Auth Url` from the output of the previous comman
 
 In your GitHub repository, go to "Settings" then "Secrets and variables" and "Actions".
 
-![GitHub repository settings with Secrets and variables selected](../../../assets/img/second_post/github_secret.png)
+![GitHub repository settings with Secrets and variables selected](img/github_secret.png)
 
 Click on "New repository secret". Note that Environment secrets can also be created to manage credentials for different Salesforce environments.
 
 Name the secret `SFDX_AUTH_URL`, then paste the `Sfdx Auth Url` value from the output of `sf org display --verbose` into the secret. Then click "Add secret".
 
-![GitHub repository secret with the name SFDX_AUTH_URL](../../../assets/img/second_post/sfdx_auth_url.png)
+![GitHub repository secret with the name SFDX_AUTH_URL](img/sfdx_auth_url.png)
 
 ### 3. Create validation workflow
 
@@ -80,7 +80,7 @@ Within the new `workflow/` directory create a new file: `validate.yaml`.
 
 Your folder structure in VS Code should now look something like this.
 
-![Folder structure containing a new validate.yaml file within the .github/workflows/ directory](../../../assets/img/second_post/folder_structure.png)
+![Folder structure containing a new validate.yaml file within the .github/workflows/ directory](img/folder_structure.png)
 
 Paste the following code into `validate.yaml`.
 
@@ -256,28 +256,28 @@ Commit your changes and push to the branch<br/>
 
 In GitHub, create a new Pull Request, merging the `test-workflows` branch with the `main` branch.
 
-![New pull request in GitHub, merging the branch test-workflows with main](../../../assets/img/second_post/new_pr.png)
+![New pull request in GitHub, merging the branch test-workflows with main](img/new_pr.png)
 
 You should see the Validate job begin to run.
 
-![Workflow for validating Salesforce running in an open pull request](../../../assets/img/second_post/running_workflow.png)
+![Workflow for validating Salesforce running in an open pull request](img/running_workflow.png)
 
 Once complete, the pull request can be merged.
 
 #### Create a release
 In your GitHub repository, click on "Releases", then "Create a new release". 
 
-![GitHub repository with an arrow pointing to the Releases link on the right side of the screen](../../../assets/img/second_post/releases.png)
+![GitHub repository with an arrow pointing to the Releases link on the right side of the screen](img/releases.png)
 
-![Empty releases page in GitHub with a button to create a new release](../../../assets/img/second_post/release_button.png)
+![Empty releases page in GitHub with a button to create a new release](img/release_button.png)
 
 Choose a tag, generally a release number (such as 0.0.1), then click "Generate release notes". Finally, click "Publish release".
 
-![New release in GitHub, titled 0.0.1](../../../assets/img/second_post/new_release.png)
+![New release in GitHub, titled 0.0.1](img/new_release.png)
 
 The release workflow is now running, and can be monitored under the "Actions" tab.
 
-![Actions tab in GitHub with a running workflow titled 0.0.1](../../../assets/img/second_post/actions_tab.png)
+![Actions tab in GitHub with a running workflow titled 0.0.1](img/actions_tab.png)
 
 Once complete, the Apex class will have deployed to your Salesforce org. 
 
@@ -286,7 +286,7 @@ The workflows will now be available in your repository and will run whenever a p
 
 In your GitHub repository, go to "Settings" then "Branches". Then click "Add branch protection rule".
 
-![GitHub repository settings with branches selected](../../../assets/img/second_post/settings_branches.png)
+![GitHub repository settings with branches selected](img/settings_branches.png)
 
 Fill out the following:
 - Branch name pattern: main
@@ -297,9 +297,9 @@ Fill out the following:
         - validate-deployment
 - Do not allow bypassing the above settings
 
-![New branch protection in GitHub repository settings with branch name pattern of "main"](../../../assets/img/second_post/branch_protection_name.png)
-![Options for branch protection in GitHub with "Require a pull request" and "Require status check" selected](../../../assets/img/second_post/branch_protection_options.png)
-![Options for branch protections with "Do not allow bypassing" selected](../../../assets/img/second_post/branch_protection_options_2.png)
+![New branch protection in GitHub repository settings with branch name pattern of "main"](img/branch_protection_name.png)
+![Options for branch protection in GitHub with "Require a pull request" and "Require status check" selected](img/branch_protection_options.png)
+![Options for branch protections with "Do not allow bypassing" selected](img/branch_protection_options_2.png)
 
 Finally, click "Create" to enable the new branch protections. GitHub now prevents commits being directly pushed to main, and Salesforce validations must successfully pass before a pull request can be merged.
 

@@ -16,7 +16,7 @@ One example of this is my recent contribution to the Salesforce CLI to improve a
 
 For example, here is the output of the command `sf apex run test -w5` in an org with 14 tests.
 
-![Long terminal output with 1 failing test.](../../../assets/img/fourth_post/test-results.png)
+![Long terminal output with 1 failing test.](img/test-results.png)
 
 This is longer than it needs to be, and represents a fairly small org. Only 1 test is failing, but it is buried behind the passing test results. In a larger org, there could be hundreds of tests, making it very cumbersome to find the test holding up a deployment.
 
@@ -28,7 +28,7 @@ Using this flag will now skip the output of passing test results and **only** di
 
 Here is the output of the command `sf apex run test -w5 --concise` in the same org.
 
-![Concise terminal output with 1 failing test.](../../../assets/img/fourth_post/concise-test-results.png)
+![Concise terminal output with 1 failing test.](img/concise-test-results.png)
 
 The terminal output is much easier to read, as only failures are displayed. If no tests fail, then only the Test Summary table is shown.
 
