@@ -15,7 +15,7 @@ But are they the **right** solution?
 
 In most trainings, Flows are recommended as the go-to Salesforce tool, with Apex only used if the logic becomes too complex. Salesforce has even doubled down on their commitment to declarative tools by unveiling their new character, [Flo the Flying Squirrel](https://www.salesforce.com/blog/meet-salesforce-workflow-character-flo/). 
 
-![Flow the flying Squirrel flying across the screen](../../../assets/img/first_post/flo.png)
+![Flow the flying Squirrel flying across the screen](img/flo.png)
 
 However, flows were never meant to replace Apex entirely. They are simply an alternative solution to problems commonly solved using Apex triggers. There *are* times when Flows are a viable option, like if there isn’t a developer on hand who can write code. That being said, any software solution needs to be able to scale. For a company hoping to provide a smooth CRM transition, Salesforce implementations need to be designed by engineers from the start. Otherwise, it's being set up for failure. 
 
@@ -32,7 +32,7 @@ Record updates like the example above should always be designed to handle bulk o
 ### Ease of Maintenance
 If too many processes are built in flows, then it quickly becomes difficult to maintain. Over time, flows might end up looking like this, which become a nightmare to debug:
 
-![A very large Salesforce flow, with numerous complex branches](../../../assets/img/first_post/large_flow.png)
+![A very large Salesforce flow, with numerous complex branches](img/large_flow.png)
 
 As mentioned before, it might become necessary to move complex functionality from flows into code. If there are Apex triggers and record-triggered flows, then the order of execution needs to be considered to ensure expected outcomes still hold. With an absence of clear documentation, it can be cumbersome to figure out where certain business logic resides.
 
@@ -49,7 +49,7 @@ The metadata is in XML, and not human readable. The only viable way to perform a
 
 Apex offers a clear advantage due to its readability.
 
-![An example of a simple pull request for Apex code in GitHub with 2 changed lines](../../../assets/img/first_post/gh_code_review.png)
+![An example of a simple pull request for Apex code in GitHub with 2 changed lines](img/gh_code_review.png)
 
 Tracking code in a git based repository is the industry standard, and is the best way to determine exactly what has changed between releases. Each modified line in an Apex class or trigger can easily be read by a reviewer and approved without any need of logging in to Salesforce. It is also a very familiar process for experienced software engineers.
 
@@ -58,7 +58,7 @@ Flows offer almost the same power as Apex but with a simpler learning curve, whi
 
 If a tool can make external callouts to systems, reassign records, expose data, or any other number of high impact operations, there needs to be a certain level of security. Not to mention the reliability of a system that doesn't have standardized tests in place. [Declarative flow tests](https://help.salesforce.com/s/articleView?id=sf.flow_concepts_testing.htm&type=5) have recently been released, but they don’t replace the full functionality of Apex test classes. Most importantly, they're missing the ability to automatically run during a deployment. This is essential in any CI/CD process to ensure breaking changes are caught.
 
-![A successful flow test executed in Salesforce UI](../../../assets/img/first_post/flow_test.png)
+![A successful flow test executed in Salesforce UI](img/flow_test.png)
 
 There is a way to [enforce flow test coverage](https://help.salesforce.com/s/articleView?id=release-notes.rn_forcecom_flow_mgmnt_coverage.htm&release=222&type=5) from Apex tests, which is highly recommended for any organization using flows. However, the fact that it’s not enabled by default is a big concern. Salesforce themselves recommend a [test-driven development process](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_testing_intro.htm), which is best done through Apex tests to ensure they are created early on.
 
