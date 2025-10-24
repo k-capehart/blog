@@ -8,8 +8,5 @@ cascade = [
     { sharingLinks = [''] }
 ]
 githubUrl = 'https://github.com/k-capehart'
+resumeUrl = 'https://raw.githack.com/k-capehart/resume/master/kyle_capehart_resume.pdf'
 +++
-
-<br/>
-
-[View Resume](../Kyle_Capehart_Resume_20240603.pdf)
