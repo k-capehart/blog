@@ -18,5 +18,33 @@ Ask him about his cat, Brisket.
 
 View [Resume](https://raw.githack.com/k-capehart/resume/master/kyle_capehart_resume.pdf)
 
-![Brisket](img/brisket.jpg)
-![Kyle running](img/kyle_run.jpeg)
+<meta name="viewport" content="width=device-width"/>
+<div class="row">
+  <div class="column">
+    <img src="img/kyle_run.jpg" alt="Kyle running" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/brisket.jpg" alt="Brisket" style="width:100%">
+  </div>
+</div>
+
+<style>
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
+}
+</style>

@@ -10,7 +10,7 @@ title = "Kyle Capehart"
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-  description = "Kyle Capehart Software Engineer Portfolio and Salesforce Blog"
+  description = "Kyle Capehart's Portfolio and Blog"
 
 [params.author]
   name = "Kyle Capehart"
@@ -18,7 +18,8 @@ title = "Kyle Capehart"
   headline = "Software Engineer"
   bio = "I write code and such"
   links = [
-    { email = "mailto:kyleacapehart@gmail.com" },
+    { bluesky = "https://bsky.app/profile/kylecapehart.bsky.social" },
+    { linkedin = "https://www.linkedin.com/in/kyle-capehart/" },
     { github = "https://github.com/k-capehart" },
-    { linkedin = "https://www.linkedin.com/in/kyle-capehart/" }
+    { email = "mailto:kyleacapehart@gmail.com" }
   ]
