@@ -3,7 +3,6 @@ title = 'Web Browser Homepage'
 date = 2024-06-06T15:17:14-04:00
 weight = 17
 description = "A simple webpage to be used as a browser home tab"
-tags = ['homepage', 'browser homepage', 'web browser homepage']
 pageName = 'web-browser-homepage'
 icon = 'web'
 draft = false

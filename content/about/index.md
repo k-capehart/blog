@@ -6,15 +6,16 @@ keywords = ['kyle capehart', 'salesforce engineer', 'salesforce blog', 'software
 sharingLinks = ['']
 showReadingTime = false
 showDate = false
+showWordCount = false
 +++
 
 <br/>
 
-Kyle Capehart is a Software Engineer based in Orlando, Florida. He has a computer science degree from the University of Central Florida.
+Kyle Capehart is a Software Engineer and open-source contributor. He has a computer science degree from the University of Central Florida.
 
 He can usually be found reading a book, playing video games, or going for a run. He eagerly awaits the day when science advances far enough to allow him to do all three at once. He is also an aspiring writer of science fiction and fantasy.
 
-Ask him about his cat, Brisket.
+He lives in Central Florida with his partner and a cat who reigns supreme.
 
 View [Resume](https://raw.githack.com/k-capehart/resume/master/kyle_capehart_resume.pdf)
 
@@ -35,8 +36,8 @@ View [Resume](https://raw.githack.com/k-capehart/resume/master/kyle_capehart_res
 }
 
 .column {
-  flex: 50%;
-  padding: 5px;
+  flex: 100%;
+  padding-right: 5px;
 }
 
 @media (max-width: 600px) {

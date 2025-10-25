@@ -2,7 +2,7 @@
 title = 'Concise Apex Test Output in the CLI'
 date = 2024-08-23T09:55:03-04:00
 draft = false
-categories = ['salesforce', 'dev-ops']
+categories = ['tech','salesforce']
 keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'dev-ops', 'dev ops', 'github actions', 'automating salesforce release', 'yaml', 'gh actions', 'salesforce pipeline', 'sf release', 'salesforce cli', 'sfdx', 'ci/cd', 'ci/cd in salesforce', 'ci cd salesforce', 'sf apex run test', 'sf apex get test', 'sf apex run test --concise', 'sf apex get test --concise', '--concise', 'concise test results']
 +++
 
