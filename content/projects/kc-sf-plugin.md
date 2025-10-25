@@ -3,7 +3,6 @@ title = 'SF CLI Plugin'
 date = 2024-06-03T10:52:02-04:00
 weight = 15
 description = "Open source custom Salesforce CLI plugin"
-tags = ['salesforce', 'sf cli', 'sf cli plugin', 'auto create triggers', 'salesforce trigger frameworks', 'sf cli diff']
 pageName = 'kc-sf-plugin'
 icon = 'terminal'
 draft = false

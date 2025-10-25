@@ -3,7 +3,6 @@ title = 'Open Source Contributions'
 date = 2024-08-23T11:18:58-04:00
 weight = 25
 description = "Contributions to Open Source Projects"
-tags = ['salesforce', 'open-source']
 pageName = 'open-source'
 icon = 'people'
 draft = false

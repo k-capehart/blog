@@ -3,7 +3,6 @@ title = 'Go-Salesforce'
 date = 2024-06-03T10:51:02-04:00
 weight = 10
 description = 'Open source REST API wrapper written in Go'
-tags = ['salesforce', 'golang', 'go-salesforce', 'salesforce rest api', 'golang salesforce rest api', 'salesforce rest api wrapper', 'salesforce rest api client']
 pageName = "go-salesforce"
 icon = 'data'
 draft = false
