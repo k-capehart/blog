@@ -8,6 +8,9 @@
     </h1>
   </header>
   <section class="mt-8">
+    <a href="{{ .Params.githubUrl }}" target="_blank" style="display: inline-block;"><img src="{{ .Params.githubStatsUrl }}" alt="Kyle's Github stats"></a>
+  </section>
+  <section class="mt-8">
     {{ range .Pages }}
       <article class="pb-6" style="margin-bottom: 20px;">
         <a class="flex group" href="/projects/{{ .Params.pageName }}">
@@ -31,6 +34,6 @@
     {{ end }}
   </section>
   <section class="max-w-full mt-6 prose dark:prose-invert">
-    See more on <a href="{{ .Params.githubUrl }}">{{ .Params.externalName }}</a> or view <a href="{{ .Params.resumeUrl }}">Resume</a>
+    See more on <a href="{{ .Params.githubUrl }}" target="_blank">{{ .Params.externalName }}</a> or view <a href="{{ .Params.resumeUrl }}" target="_blank">Resume</a>
   </section>
 {{ end }}
