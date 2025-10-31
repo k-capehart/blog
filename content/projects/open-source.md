@@ -25,8 +25,9 @@ The official Salesforce CLI. Projects include [salesforcecli](https://github.com
 
 ## SFDX-Hardis
 
-An open source plugin for the Salesforce CLI that offers a variety of features.
+An open source plugin for the Salesforce CLI and VS Code extension that offers a variety of features.
 
+- [PR#288](https://github.com/hardisgroupcom/vscode-sfdx-hardis/pull/288) - Fix a bug related to setting custom themes in VS Code
 - [PR#903](https://github.com/hardisgroupcom/sfdx-hardis/pull/903) - Fix an issue where the last modified date was calculated based off of metadata files rather than the class file
 
 ## Lightning Flow Scanner
