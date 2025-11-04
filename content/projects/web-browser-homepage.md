@@ -10,7 +10,7 @@ draft = false
 
 <div style="display: flex; flex-direction: row;">
     <div style="margin-right: 10px;"><a href="https://github.com/k-capehart/Web-Browser-Homepage"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a></div>
-    <div style="margin: auto 0px auto 0px"><a href="https://raw.githack.com/k-capehart/Web-Browser-Homepage/master/index.html"><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Link to web page"></a></div>
+    <div style="margin: auto 0px auto 0px"><a href="https://rawcdn.githack.com/k-capehart/Web-Browser-Homepage/41bc183f9ff9d8beb3ea12a4a25133b8d7fe5d78/index.html"><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Link to web page"></a></div>
 </div>
 
 A custom homepage / new tab page built for web browsers.

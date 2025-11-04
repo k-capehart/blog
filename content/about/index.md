@@ -17,8 +17,6 @@ He can usually be found reading a book, playing video games, or going for a run.
 
 He lives in Central Florida with his partner and a cat who reigns supreme.
 
-View [Resume](https://raw.githack.com/k-capehart/resume/master/kyle_capehart_resume.pdf)
-
 <meta name="viewport" content="width=device-width"/>
 <div class="row">
   <div class="column">
