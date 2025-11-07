@@ -19,3 +19,4 @@ Open source custom Salesforce CLI plugin.
 - Custom commands for the salesforce command line interface that can be installed as a plugin for anyone to use
 - Display differences between a source tracked org and a local project
 - Automatically generate Apex trigger frameworks based off of custom templates
+- Update the API version of Apex classes, triggers, and flows

@@ -14,9 +14,10 @@ draft = false
 
 A collection of contributions I have made to open source projects.
 
-## Salesforce Command Line Interface
-The official Salesforce CLI. Projects include [salesforcecli](https://github.com/salesforcecli), [oclif](https://github.com/oclif), and [salesforcedx-apex](https://github.com/forcedotcom/salesforcedx-apex).
+## Salesforce DX
+Official Salesforce open source projects include [salesforcecli](https://github.com/salesforcecli), [oclif](https://github.com/oclif), [salesforcedx-apex](https://github.com/forcedotcom/salesforcedx-apex), and [salesforcedx-vscode](https://github.com/forcedotcom/salesforcedx-vscode)
 
+- [PR#6599](https://github.com/forcedotcom/salesforcedx-vscode/pull/6599) / [PR#6636](https://github.com/forcedotcom/salesforcedx-vscode/pull/6636) - Add `test-run-concise` option to Visual Studio code for concise apex results
 - [PR#504](https://github.com/salesforcecli/plugin-apex/pull/504) / [PR#553](https://github.com/salesforcecli/plugin-apex/pull/553) - Add `concise` flag to `sf apex run test` to suppress successful test results in terminal output
 - [PR#377](https://github.com/forcedotcom/salesforcedx-apex/pull/377) / [PR#383](https://github.com/forcedotcom/salesforcedx-apex/pull/383) - Reformat terminal output for apex test results
 - [PR#873](https://github.com/salesforcecli/plugin-deploy-retrieve/pull/873) - Add `concise` flag to `sf project deploy preview` to suppress ignored files from displaying in terminal output
