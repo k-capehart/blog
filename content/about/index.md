@@ -15,7 +15,7 @@ Kyle Capehart is a Software Engineer and open-source contributor. He has a compu
 
 He can usually be found reading a book, playing video games, or going for a run. He eagerly awaits the day when science advances far enough to allow him to do all three at once. He is also an aspiring writer of science fiction and fantasy.
 
-He lives in Central Florida with his partner and a cat who reigns supreme.
+He lives in Central Florida with his partner and a very spoiled cat.
 
 <meta name="viewport" content="width=device-width"/>
 <div class="row">
