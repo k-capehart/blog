@@ -15,7 +15,7 @@ But are they the **right** solution?
 
 In most trainings, Flows are recommended as the go-to Salesforce tool, with Apex only used if the logic becomes too complex. Salesforce has even doubled down on their commitment to declarative tools by unveiling their new character, [Flo the Flying Squirrel](https://www.salesforce.com/blog/meet-salesforce-workflow-character-flo/). 
 
-![Flow the flying Squirrel flying across the screen](img/flo.png)
+![Flow the flying Squirrel flying across the screen](img/flo.webp)
 
 However, flows were never meant to replace Apex entirely. They are simply an alternative solution to problems commonly solved using Apex triggers. There *are* times when Flows are a viable option, like if there isn’t a developer on hand who can write code. That being said, any software solution needs to be able to scale. For a company hoping to provide a smooth CRM transition, Salesforce implementations need to be designed by engineers from the start. Otherwise, it's being set up for failure. 
 
