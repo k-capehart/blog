@@ -35,3 +35,5 @@ If you’ve ever read code written by a coworker and struggled to understand wha
 Just as the code you write impacts your future self, it also impacts every single person that comes after you. That if-statement you’re writing might last longer than your tenure at the company. So write it like you won’t be there to explain it.
 
 Write it like you care.
+
+<br>*Comments or questions? <a href="https://forms.gle/VhiMZUReoxWAS4Ts8" target="_blank">Send me a message</a>*

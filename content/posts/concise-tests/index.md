@@ -34,4 +34,4 @@ The terminal output is much easier to read, as only failures are displayed. If n
 
 This feature is part of the stable release candidate for August 28th. Check out the [release notes](https://github.com/forcedotcom/cli/blob/main/releasenotes/README.md#2566-august-28-2024-stable-rc) and try it out!
 
-<br>*Comments or questions? <a href="https://forms.gle/VhiMZUReoxWAS4Ts8">Send me a message</a>*
+<br>*Comments or questions? <a href="https://forms.gle/VhiMZUReoxWAS4Ts8" target="_blank">Send me a message</a>*
