@@ -309,4 +309,4 @@ Finally, click "Create" to enable the new branch protections. GitHub now prevent
 
 Salesforce supports many options for automating deployments, and the right solution will depend on a variety of factors. GitHub Actions empower developers to quickly and efficiently spin up pipelines, so that everyone is always on the same page before a new release. Modifications to the workflow can easily be made to adapt to more complicated requirements. To enable deployments to multiple sandbox environments, look into [GitHub Action environments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment).
 
-<br>*Comments or questions? <a href="mailto: kyleacapehart@gmail.com">Send me a message</a>*
+<br>*Comments or questions? <a href="https://forms.gle/VhiMZUReoxWAS4Ts8">Send me a message</a>*
