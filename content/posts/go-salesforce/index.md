@@ -288,6 +288,6 @@ Run the program, replacing the Salesforce IDs below with those of Account Ids in
 
 ![the program successfully running on 2 contacts](img/run_program.png)
 
-<br>*Comments or questions? <a href="https://forms.gle/VhiMZUReoxWAS4Ts8">Send me a message</a>*
+<br>*Comments or questions? <a href="https://forms.gle/VhiMZUReoxWAS4Ts8" target="_blank">Send me a message</a>*
 
 *Updated on 7/23/2024 for the go-salesforce v2 release*
