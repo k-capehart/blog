@@ -47,7 +47,7 @@ link = "https://github.com/zeon-studio/hugoplate"
 # Set to false to disable /llms.txt generation
 generate_llms_txt = true
 # Set to false to disable /llms-full.txt generation
-generate_llms_full_txt = true
+generate_llms_full_txt = false
 # Limit to specific paths (e.g. "/about/", "/blog/*", "/blog/**"). Empty = all pages.
 include = []
 # Exclude specific paths (same wildcard formats as include). Include takes priority on conflicts.
