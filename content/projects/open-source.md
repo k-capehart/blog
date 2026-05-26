@@ -10,7 +10,7 @@ badges:
 links:
   - icon: fab fa-github
     url: https://github.com/k-capehart
-showKnowMore: true
+showReadMore: true
 draft: false
 ---
 

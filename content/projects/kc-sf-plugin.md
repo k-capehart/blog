@@ -8,6 +8,7 @@ tags: []
 badges:
   - "TypeScript"
   - "Salesforce CLI"
+link: https://github.com/k-capehart/kc-sf-plugin
 links:
   - icon: fab fa-github
     url: https://github.com/k-capehart/kc-sf-plugin

@@ -162,8 +162,8 @@ params:
       enable: true
       name: "Resume"
       url: "https://rawcdn.githack.com/k-capehart/resume/357e682c2291c9ff67cdc59d985db9f317dc0ed3/kyle_capehart_resume.pdf"
-      download: true
-      newPage: false
+      download: false
+      newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -171,11 +171,8 @@ params:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/kyle-capehart/
       customIcons:
-        - icon: /images/icons/bluesky.svg
+        - icon: /icons/bluesky.svg
           url: https://bsky.app/profile/kylecapehart.com
-      # customIcons:
-      #   - icon: /fav.png
-      #     url: "https://example.com"
 
   # About
   about:
@@ -194,45 +191,78 @@ params:
 
   # Experience
   experience:
-    enable: false
+    enable: true
     # title: "Custom Name"
     items:
       - company: "Gusto"
-        companyUrl: "https://example.com"
+        companyUrl: "https://gusto.com"
         jobs:
-          - name: "Senior Software Engineer"
-            date: "October 2024 - present"
-            content: "test"
-            info:
-              content: Working as a senior software developer
-            featuredItems:
-              fontAwesomeIcons:
-                - icon: fa-brands fa-react
-                  url: https://react.dev/
-                  tooltip: Example tooltip content
-                - icon: fab fa-x-twitter
-                  url: https://example.com
-                  # tooltip: Example tooltip content
-              customIcons:
-                - icon: /fav.png
-                  url: "https://example.com"
-                  tooltip: Example tooltip content
+          - name: "Sr. Software Engineer"
+            date: "November 2025 - present"
+            content: |-
+              - End-to-end integrations between the core Ruby on Rails app and the CRM
+              - Built custom CI/CD pipeline for the Salesforce developer team
+              - Implemented event routing system for marketing events sent to Iterable
+              - Helped lead Salesforce migration for Revenue team
+            # info:
+            #   content: Retirement Engineering
+            # featuredItems:
+            #   fontAwesomeIcons:
+            #     - icon: fa-brands fa-react
+            #       url: https://react.dev/
+            #       tooltip: Example tooltip content
+            #     - icon: fab fa-x-twitter
+            #       url: https://example.com
+            #       # tooltip: Example tooltip content
+            #   customIcons:
+            #     - icon: /fav.png
+            #       url: "https://example.com"
+            #       tooltip: Example tooltip content
+      - company: "Guideline"
+        companyUrl: "https://guideline.com"
+        jobs:
+          - name: "Sr. Software Engineer"
+            date: "October 2024 - November 2025"
+            content: |-
+              - Created custom slack integration for syncing Leads to Salesforce
+              - Built custom CI/CD pipeline to replace enterprise solution, saving thousands
+      - company: "ATD"
+        companyUrl: "https://atd.com"
+        jobs:
+          - name: "Technical Lead"
+            date: "February 2023 - September 2024"
+            content: |-
+              - Lead the Customer Engagement team, building and maintaining Salesforce functionality for Sales and CX
+              - Rebuilt the CI/CD pipeline using GitHub Actions
+              - Managed contractors, delegating tasks and working with stakeholders
+      - company: "Deloitte"
+        companyUrl: "https://deloitte.com"
+        jobs:
+          - name: "Software Engineer"
+            date: "July 2019 - February 2023"
+            content: |-
+              - Led development team, overseeing release for projects contracted by the FDA
+              - Built time reporting application used by thousands of federal employees
+              - Automated data loading tasks using Python
+      - company: "Siemens"
+        companyUrl: "https://siemens.com"
+        jobs:
+          - name: "Software Engineer Intern"
+            date: "March 2018 - July 2019"
+            content: |-
+              - Maintained internal customer portal built in Salesforce
 
   # Education
   education:
-    enable: false
+    enable: true
     # title: "Custom Name"
     index: false
     items:
-      - title: "Bachelor of Science in Computer Science"
+      - title: "B.S. in Computer Science"
         school:
           name: "University of Central Florida"
-          url: "https://example.org"
+          url: "https://www.ucf.edu/"
         date: "2015 - 2019"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
   # Achievements
   achievements:
     enable: false

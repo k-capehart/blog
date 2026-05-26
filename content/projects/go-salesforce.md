@@ -8,6 +8,7 @@ tags: []
 badges:
   - "Go"
   - "Salesforce"
+link: https://github.com/k-capehart/go-salesforce
 links:
   - icon: fab fa-github
     url: https://github.com/k-capehart/go-salesforce

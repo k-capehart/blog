@@ -6,6 +6,7 @@ categories: ['tech']
 keywords: ['kyle capehart']
 tags: []
 description: "It’s easy to become apathetic when working in tech."
+toc: false
 ---
 
 It’s easy to become apathetic when working in tech.

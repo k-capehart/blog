@@ -9,6 +9,7 @@ badges:
   - "JavaScript"
   - "HTML"
   - "CSS"
+link: https://github.com/k-capehart/Web-Browser-Homepage
 links:
   - icon: fab fa-github
     url: https://github.com/k-capehart/Web-Browser-Homepage

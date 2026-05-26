@@ -22,6 +22,9 @@
                     <!-- <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}"> -->
                 </div>
                 <div class="card-body bg-transparent p-3">
+                    {{ with .Params.link }}
+                        <a class="stretched-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="Open {{ $.Title }}"></a>
+                    {{ end }}
                     <div class="pb-2 bg-transparent">
                         {{ range .Params.badges }}
                         <span class="badge badge-secondary">{{ . }}</span>
@@ -40,10 +43,10 @@
                         </a>
                     </span>
                     {{ end }}
-                    {{ if .Params.showKnowMore | default false }}
+                    {{ if .Params.showReadMore | default false }}
                         <span class="float-end">
                             <a class="btn btn-sm" href="{{ .RelPermalink }}">
-                                Know more
+                                Read more
                             </a>
                         </span>
                     {{ end }}
