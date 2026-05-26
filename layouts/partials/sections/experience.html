@@ -44,8 +44,7 @@
                             >
                                 {{ range $jobIdx, $job := .jobs }}
                                     <div>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div>
+                                        <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center">                                            <div>
                                                 <span class="{{ if eq $jobIdx 0 }}h4{{ else }}h5{{ end }}">{{ $job.name }}</span>
                                                 
                                                 {{ if $job.info.content }}
@@ -65,7 +64,7 @@
                                                     <a href="{{ $companyUrl }}" target="_blank">{{ $company }}</a>
                                                 {{ end }}
                                             </div>
-                                            <div class="d-block">
+                                            <div class="mt-1 mt-md-0 ms-md-auto text-md-end">
                                                 <small>{{ $job.date }}</small>
                                                 {{ if $job.featuredItems }}
                                                     <div class="featuredLink list-inline d-flex justify-content-end align-items-center">
