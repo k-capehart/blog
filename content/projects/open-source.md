@@ -1,16 +1,19 @@
-+++
-title = 'Open Source Contributions'
-date = 2024-08-23T11:18:58-04:00
-weight = 25
-description = "Contributions to Open Source Projects"
-pageName = 'open-source'
-icon = 'people'
-draft = false
-+++
+---
+title: "Open Source Contributions"
+date: 2024-08-23T11:18:58-04:00
+weight: 25
+summary: "Contributions to open source projects"
+descriptions: "Contributions to open source projects"
+tags: []
+badges:
+  - "Open Source"
+links:
+  - icon: fab fa-github
+    url: https://github.com/k-capehart
+showKnowMore: true
+draft: false
+---
 
-<div style="display: flex; flex-direction: row;">
-    <div style="margin-right: 10px;"><a href="https://github.com/k-capehart"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github"></a></div>
-</div>
 
 A collection of contributions I have made to open source projects.
 

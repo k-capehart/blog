@@ -1,0 +1,18 @@
+/* Shorter project cards on /projects/ */
+#projects .card {
+    min-height: unset;
+  }
+  
+  #projects .card-body {
+    padding: 0.75rem 1rem !important;
+  }
+  
+  #projects .card-footer {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  /* Optional: cap image height if you use images */
+  #projects .card-img-top {
+    max-height: 140px;
+    object-fit: cover;
+  }

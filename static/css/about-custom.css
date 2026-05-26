@@ -1,0 +1,10 @@
+#aboutGalleryCarousel .carousel-item img {
+    height: 420px;
+    object-fit: contain;
+    background: #0000;
+}
+
+#aboutGalleryCarousel .carousel-control-prev-icon,
+#aboutGalleryCarousel .carousel-control-next-icon {
+  filter: invert(1) grayscale(1); /* makes icons dark on light backgrounds */
+}
