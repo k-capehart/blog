@@ -16,31 +16,19 @@
   weight = 1
 
 [[main]]
-  name = "Posts"
-  pageRef = "posts"
-  weight = 15
-
-[[main]]
-  name = "Projects"
-  pageRef = "projects"
-  weight = 10
-
-[[main]]
   name = "About"
   pageRef = "about"
   weight = 20
 
 [[main]]
-  identifier = "search"
-  weight = 99
-  [main.params]
-    action = "search"
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
 
 [[main]]
-  identifier = "locale"
-  weight = 100
-  [main.params]
-    action = "locale"
+  name = "Projects"
+  pageRef = "projects"
+  weight = 15
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

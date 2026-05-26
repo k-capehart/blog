@@ -1,39 +1,64 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+<link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<link rel="stylesheet" href="{{ (printf "%scss/projects-custom.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+
+<!-- fontawesome -->
+<script defer src="{{ (printf "%sfontawesome-6/all-6.4.2.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+{{ end }}
+
+{{ define "title" }}
+{{.Title }} | {{ .Site.Title }}
+{{ end }}
+
 {{ define "main" }}
-  <header>
-    {{ if .Site.Params.article.showBreadcrumbs | default false }}
-      {{ partial "breadcrumbs.html" . }}
-    {{ end }}
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      {{ .Title | emojify }}
-    </h1>
-  </header>
-  <section class="mt-8">
-    <a href="{{ .Params.githubUrl }}" target="_blank" style="display: inline-block;"><img src="{{ .Params.githubStatsUrl }}" alt="Kyle's Github stats"></a>
-  </section>
-  <section class="mt-8">
-    {{ range .Pages }}
-      <article class="pb-6" style="margin-bottom: 20px;">
-        <a class="flex group" href="/projects/{{ .Params.pageName }}">
-          <div class="mr-4 text-3xl text-neutral-300 dark:text-neutral-400 group-hover:text-primary-500
-          dark:group-hover:text-primary-400">
-            <span class="relative inline-block align-text-bottom icon">
-            {{ partial "icon.html" .Params.icon }}
-            </span>
-          </div>
-          <div>
-            <h3 class="flex text-xl font-semibold group-hover:underline group-hover:decoration-primary-500
-            group-hover:underline-offset-2">
-              {{ .Title }}
-            </h3>
-            <p class="text-sm text-neutral-500">
-              {{ .Description }}
-            </p>
-          </div>
-        </a>
-      </article>
-    {{ end }}
-  </section>
-  <section class="max-w-full mt-6 prose dark:prose-invert">
-    See more on <a href="{{ .Params.githubUrl }}" target="_blank">{{ .Params.externalName }}</a> or view <a href="{{ .Params.resumeUrl }}" target="_blank">Resume</a>
-  </section>
+<div class="container pt-5" id="projects">
+    <h2 class="text-center pb-2">{{.Title}}</h2>
+    <div class="row">
+        {{ range .Paginator.Pages }}
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card my-3 h-100" title="{{ .Title }}">
+                <div class="card-head">
+                    <!-- <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}"> -->
+                </div>
+                <div class="card-body bg-transparent p-3">
+                    {{ with .Params.link }}
+                        <a class="stretched-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="Open {{ $.Title }}"></a>
+                    {{ end }}
+                    <div class="pb-2 bg-transparent">
+                        {{ range .Params.badges }}
+                        <span class="badge badge-secondary">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    <h5 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h5>
+                    <div class="card-text bg-transparent secondary-font">
+                        {{ .Summary | truncate 100 | safeHTML }}
+                    </div>
+                </div>
+                <div class="card-footer py-3">
+                    {{ range .Params.links }}
+                    <span class="m-1 mx-2">
+                        <a href="{{ .url }}" target="_blank">
+                            <i class="{{ .icon }}"></i>
+                        </a>
+                    </span>
+                    {{ end }}
+                    {{ if .Params.showReadMore | default false }}
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="{{ .RelPermalink }}">
+                                Read more
+                            </a>
+                        </span>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        <div class="row justify-content-center">
+            <div class="col-auto m-3">
+                {{template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </div>
+</div>
 {{ end }}

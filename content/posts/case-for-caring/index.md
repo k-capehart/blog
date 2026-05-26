@@ -1,10 +1,13 @@
-+++
-title = 'The Case for Caring in Tech'
-date = 2025-10-24T13:09:58-04:00
-draft = false
-categories = ['tech']
-keywords = ['kyle capehart']
-+++
+---
+title: 'The Case for Caring in Tech'
+date: 2025-10-24T13:09:58-04:00
+draft: false
+categories: ['tech']
+keywords: ['kyle capehart']
+tags: []
+description: "It’s easy to become apathetic when working in tech."
+toc: false
+---
 
 It’s easy to become apathetic when working in tech.
 

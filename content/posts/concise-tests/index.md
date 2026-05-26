@@ -1,14 +1,15 @@
-+++
-title = 'Concise Apex Test Output in the CLI'
-date = 2024-08-23T09:55:03-04:00
-draft = false
-categories = ['tech','salesforce']
-keywords = ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'dev-ops', 'dev ops', 'github actions', 'automating salesforce release', 'yaml', 'gh actions', 'salesforce pipeline', 'sf release', 'salesforce cli', 'sfdx', 'ci/cd', 'ci/cd in salesforce', 'ci cd salesforce', 'sf apex run test', 'sf apex get test', 'sf apex run test --concise', 'sf apex get test --concise', '--concise', 'concise test results']
-+++
+---
+title: 'Concise Apex Test Output in the CLI'
+date: 2024-08-23T09:55:03-04:00
+draft: false
+categories: ['tech','salesforce']
+keywords: ['kyle capehart', 'salesforce', 'sf', 'sfdc', 'dev-ops', 'dev ops', 'github actions', 'automating salesforce release', 'yaml', 'gh actions', 'salesforce pipeline', 'sf release', 'salesforce cli', 'sfdx', 'ci/cd', 'ci/cd in salesforce', 'ci cd salesforce', 'sf apex run test', 'sf apex get test', 'sf apex run test --concise', 'sf apex get test --concise', '--concise', 'concise test results']
+tags: []
+description: "Improving the developer experience when running apex tests."
+toc: false
+---
 
 Improving the developer experience when running apex tests.
-
-![Art of a computer terminal.](thumb-concise-tests.jpg)
 
 The power of open source software is that it is community driven, so that anyone can make meaningful contributions, even when that contribution feels small.
 

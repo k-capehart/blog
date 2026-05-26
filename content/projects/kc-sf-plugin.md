@@ -1,22 +1,22 @@
-+++
-title = 'SF CLI Plugin'
-date = 2024-06-03T10:52:02-04:00
-weight = 15
-description = "Open source custom Salesforce CLI plugin"
-pageName = 'kc-sf-plugin'
-icon = 'terminal'
-draft = false
-+++
+---
+title: "SF CLI Plugin"
+date: 2024-06-03T10:52:02-04:00
+weight: 15
+summary: "Open source custom Salesforce CLI plugin"
+description: "Open source custom Salesforce CLI plugin"
+tags: []
+badges:
+  - "TypeScript"
+  - "Salesforce CLI"
+link: https://github.com/k-capehart/kc-sf-plugin
+links:
+  - icon: fab fa-github
+    url: https://github.com/k-capehart/kc-sf-plugin
+  - icon: fab fa-npm
+    url: https://www.npmjs.com/package/kc-sf-plugin
+draft: false
+---
 
-<div style="display: flex; flex-direction: row;">
-    <div style="margin-right: 10px;"><a href="https://github.com/k-capehart/kc-sf-plugin"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=whitef" alt="Link to Github repo"></a></div>
-    <div style="margin: auto 0px auto 0px"><a href="https://www.npmjs.com/package/kc-sf-plugin"><img src="https://img.shields.io/npm/v/kc-sf-plugin.svg?label=kc-sf-plugin" alt="Link to NPM Package"></a></div>
-</div>
+Open source custom Salesforce CLI plugin
 
-Open source custom Salesforce CLI plugin.
-
-- Language: TypeScript
-- Custom commands for the salesforce command line interface that can be installed as a plugin for anyone to use
-- Display differences between a source tracked org and a local project
-- Automatically generate Apex trigger frameworks based off of custom templates
-- Update the API version of Apex classes, triggers, and flows
+https://github.com/k-capehart/kc-sf-plugin
