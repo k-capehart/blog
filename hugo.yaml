@@ -152,8 +152,8 @@ params:
     enable: true
     # intro: "Hi, my name is"
     title: "Kyle Capehart"
-    subtitle: "Software Engineer"
-    content: "I write code and such"
+    subtitle: "Engineer | Writer"
+    content: "I write code and words"
     image: /images/kyle_headshot.jpg
     bottomImage:
       enable: true
@@ -191,7 +191,7 @@ params:
 
   # Experience
   experience:
-    enable: true
+    enable: false
     # title: "Custom Name"
     items:
       - company: "Gusto"
@@ -254,7 +254,7 @@ params:
 
   # Education
   education:
-    enable: true
+    enable: false
     # title: "Custom Name"
     index: false
     items:
